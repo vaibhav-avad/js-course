@@ -67,9 +67,32 @@ n an object method, this refers to the object
 this lets methods access object properties
 Used alone, this refers to the global object
 
+Object Display
+Object.values() creates an array from the property values:// Create an Object
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+// Create an Array
+const myArray = Object.values(person);
+// Stringify the Array
+let text = myArray.toString();
 
+stringify()Object.entries() makes it simple to use objects in loops:
+JavaScript objects can be converted to a string with JSON method JSON. JSON.stringify().
 
+we can use new Person() to create many new Person objects:const myFather = new Person("John", "Doe", 50, "blue");
+const myMother = new Person("Sally", "Rally", 48, "green");
+const mySister = new Person("Anna", "Rally", 18, "green");
+const mySelf = new Person("Johnny", "Rally", 22, "green");
 
+The new property will be added to myFather. Not to any other Person Objects. means only add in present object not in new other.
+
+Use object literals {} instead of new Object().
+Use array literals [] instead of new Array().
+Use pattern literals /()/ instead of new RegExp().
+Use function expressions () {} instead of new Function().
 
 
 
